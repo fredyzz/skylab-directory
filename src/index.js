@@ -3,13 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { SkylabersContextProvider } from './store/skylabersContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SkylabersContextProvider>
+      <App />
+    </SkylabersContextProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
-
-reportWebVitals();
